@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "packageName": "TeamsWebPart",
+  "id": "0230e5a5-964a-4b33-a610-e47afb75d230",
+  "version": "1.0",
+  "developer": {
+    "name": "Giuliano De Luca",
+    "websiteUrl": "https://giulianodemo.sharepoint.com/SitePages/default.aspx",
+    "privacyUrl": "https://giulianodemo.sharepoint.com/SitePages/Privacy.aspx",
+    "termsOfUseUrl": "https://giulianodemo.sharepoint.com/SitePages/Terms-Of-Use.aspx"
+  },
+  "name": {
+    "short": "TPA"
+  },
+  "description": {
+    "short": "TPA - Teams Personal App",
+    "full": "TPA Teams Personal App allows you to engage your users"
+  },
+  "icons": {
+    "outline": "0230e5a5-964a-4b33-a610-e47afb75d230_outline.png",
+    "color": "0230e5a5-964a-4b33-a610-e47afb75d230_color.png"
+  },
+  "accentColor": "#4f5b5f",
+  "staticTabs": [
+    {
+      "entityId": "100001",
+      "name": "Teams",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=0230e5a5-964a-4b33-a610-e47afb75d230%26forceLocale={locale}",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "100002",
+      "name": "SharePoint",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=cb989010-2845-45c7-9a5e-e723e52acad7%26forceLocale={locale}",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "100003",
+      "name": "OneDrive",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=c1f33da6-f116-48ad-8375-9e8a32a1f6b1%26forceLocale={locale}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "id": "00000003-0000-0ff1-ce00-000000000000",
+    "resource": "https://{teamSiteDomain}"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "teams-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/teams/TeamsWebPart.js",
+          "manifest": "./src/webparts/teams/TeamsWebPart.manifest.json"
+        }
+      ]
+    },
+    "share-point-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sharePoint/SharePointWebPart.js",
+          "manifest": "./src/webparts/sharePoint/SharePointWebPart.manifest.json"
+        }
+      ]
+    },
+    "one-drive-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/oneDrive/OneDriveWebPart.js",
+          "manifest": "./src/webparts/oneDrive/OneDriveWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TeamsWebPartStrings": "lib/webparts/teams/loc/{locale}.js",
+    "SharePointWebPartStrings": "lib/webparts/sharePoint/loc/{locale}.js",
+    "OneDriveWebPartStrings": "lib/webparts/oneDrive/loc/{locale}.js"
+  }
+}
