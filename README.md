@@ -1,5 +1,6 @@
 ## teams-personal-app
 
+![Preview](/assets/Preview.png)
 Microsoft Teams | How to create Personal Apps
 Video demonstration on my YouTube Channel:
 [https://youtu.be/S0QPk4eWQlQ](https://youtu.be/S0QPk4eWQlQ)
